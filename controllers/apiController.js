@@ -37,7 +37,7 @@ module.exports = function(app) {
         isDone: req.body.isDone,
         hasAttachment: req.body.hasAttachment
       });
-      newTodo.sava(function(err) {
+      newTodo.save(function(err) {
         if (err) throw err;
         res.send('Success');
       });
